@@ -1,0 +1,54 @@
+{
+  "name": "glassinewc",
+  "version": "1.0.0",
+  "description": "Glassmorphism Web Components built with Lit + TypeScript — beautiful frosted-glass UI elements",
+  "type": "module",
+  "main": "./dist/glassinewc.js",
+  "module": "./dist/glassinewc.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/glassinewc.js"
+    },
+    "./glassinewc-button": {
+      "types": "./dist/glassinewc-button.d.ts",
+      "import": "./dist/glassinewc-button.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "build:lib": "vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview --open",
+    "format": "prettier --write \"src/**/*.{ts,js,json}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,js,json}\""
+  },
+  "keywords": [
+    "web-components",
+    "lit",
+    "typescript",
+    "custom-elements",
+    "ui-components",
+    "MD3 like"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "lit": ">=3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "lit": "^3.2.0",
+    "prettier": "^3.8.1",
+    "typescript": "^5.5.0",
+    "vite": "^5.4.0",
+    "vite-plugin-dts": "^4.3.0"
+  }
+}
