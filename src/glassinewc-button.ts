@@ -305,13 +305,13 @@ export class GlassinewcButton extends LitElement {
       font-size: calc(var(--_icon-size) * 0.8);
       text-decoration: none;
       user-select: none;
-      cursor: pointer;
+      cursor: var(--_cursor);
 
       &::before {
         content: '';
         position: absolute;
         pointer-events: auto;
-        cursor: pointer;
+        cursor: var(--_cursor);
         inset: var(--_target-offset-y) var(--_target-offset-x);
       }
 
@@ -426,6 +426,9 @@ export class GlassinewcButton extends LitElement {
           this.style.setProperty('--_action-color', actionColor[this.variant]);
         }
       }
+    }
+    if (changed.has('disabled')) {
+      this.style.setProperty('--_cursor', this.disabled ? 'default' : 'pointer');
     }
   }
 
