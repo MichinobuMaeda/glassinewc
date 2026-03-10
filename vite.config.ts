@@ -6,6 +6,12 @@ import dts from 'vite-plugin-dts';
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 export default defineConfig({
+  root: resolve(__dirname, 'docs'),
+  resolve: {
+    alias: {
+      '/src': resolve(__dirname, 'src'),
+    },
+  },
   server: {
     port: 8000,
   },
@@ -29,6 +35,7 @@ export default defineConfig({
       // Keep lit as a peer dep — not bundled
       external: ['lit', /^lit\//],
     },
+    outDir: resolve(__dirname, 'dist'),
     sourcemap: true,
     emptyOutDir: true,
   },

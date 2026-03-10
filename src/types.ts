@@ -1,12 +1,10 @@
 /** Shared prop-value union types used across GlassineWC components. */
 
-export type ButtonVariant = 'primary' | 'secondary' | 'danger' | 'success' | 'ghost';
-export type ButtonSize = 'sm' | 'md' | 'lg';
-
-export type CardPadding = 'none' | 'sm' | 'md' | 'lg' | 'xl';
-
-export type BadgeVariant = 'default' | 'primary' | 'success' | 'warning' | 'danger' | 'info';
-export type BadgeSize = 'sm' | 'md' | 'lg';
+export type ButtonType = 'button' | 'submit' | 'reset' | 'link' | 'checkbox' | 'radio';
+export type ButtonVariant = 'filled' | 'tonal' | 'danger' | 'outlined' | 'elevated' | 'text';
+export type ButtonSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+export type ButtonShape = 'round' | 'square';
+export type IconButton = 'none' | 'default' | 'narrow' | 'wide';
 
 /** Payload of the `glassinewc-click` custom event. */
 export interface GlassinewcClickDetail {

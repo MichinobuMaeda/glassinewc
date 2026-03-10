@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./glassinewc.css" />
+    <link rel="stylesheet" href="./sample.css" />
+    <script type="module" src="/src/index.ts"></script>
+    <title>GlassineWC MD3 like Web Components</title>
+  </head>
+  <body>
+    <h1>GlassineWC</h1>
+    <main>
+      <a href="index.html">Back to Index</a>
+      <h2>glassinewc-button</h2>
+      <h3>variant</h3>
+      <div class="row">filled (default), tonal, danger, outlined, elevated, text</div>
+      <div class="row">
+        <glassinewc-button variant="filled" size="sm">Filled</glassinewc-button>
+        <glassinewc-button variant="tonal" size="sm">Tonal</glassinewc-button>
+        <glassinewc-button variant="danger" size="sm">Danger</glassinewc-button>
+        <glassinewc-button variant="outlined" size="sm">Outlined</glassinewc-button>
+        <glassinewc-button variant="elevated" size="sm">Elevated</glassinewc-button>
+        <glassinewc-button variant="text" size="sm">Text</glassinewc-button>
+      </div>
+      <h3>type</h3>
+      <div class="row">button (default), submit, reset, link, checkbox, radio</div>
+      <div class="row">
+        <glassinewc-button variant="filled" size="sm">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+          Button
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button type="submit" variant="filled" size="sm">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+          Submit
+        </glassinewc-button>
+        <glassinewc-button type="reset" variant="filled" size="sm">
+          Reset
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button type="link" href="#" variant="filled" size="sm">
+          Link
+        </glassinewc-button>
+      </div>
+      <div class="row">
+        <glassinewc-button type="checkbox" variant="filled" size="sm">Filled</glassinewc-button>
+        <glassinewc-button type="checkbox" variant="tonal" size="sm">Tonal</glassinewc-button>
+        <glassinewc-button type="checkbox" variant="danger" size="sm">Danger</glassinewc-button>
+        <glassinewc-button type="checkbox" variant="outlined" size="sm">Outlined</glassinewc-button>
+        <glassinewc-button type="checkbox" variant="elevated" size="sm">Elevated</glassinewc-button>
+      </div>
+      <div class="row">
+        <glassinewc-button type="checkbox" checked variant="filled" size="sm"
+          >Filled</glassinewc-button
+        >
+        <glassinewc-button type="checkbox" checked variant="tonal" size="sm"
+          >Tonal</glassinewc-button
+        >
+        <glassinewc-button type="checkbox" checked variant="danger" size="sm"
+          >Danger</glassinewc-button
+        >
+        <glassinewc-button type="checkbox" checked variant="outlined" size="sm"
+          >Outlined</glassinewc-button
+        >
+        <glassinewc-button type="checkbox" checked variant="elevated" size="sm"
+          >Elevated</glassinewc-button
+        >
+      </div>
+      <h3>disabled</h3>
+      <div class="row">
+        <glassinewc-button disabled variant="filled" size="sm">Filled</glassinewc-button>
+        <glassinewc-button disabled variant="tonal" size="sm">Tonal</glassinewc-button>
+        <glassinewc-button disabled variant="danger" size="sm">Danger</glassinewc-button>
+        <glassinewc-button disabled variant="outlined" size="sm">Outlined</glassinewc-button>
+        <glassinewc-button disabled variant="elevated" size="sm">Elevated</glassinewc-button>
+        <glassinewc-button disabled variant="text" size="sm">Text</glassinewc-button>
+      </div>
+      <div class="row">
+        <glassinewc-button disabled variant="filled" size="sm">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+          Button
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button disabled type="submit" variant="filled" size="sm">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+          Submit
+        </glassinewc-button>
+        <glassinewc-button disabled type="reset" variant="filled" size="sm">
+          Reset
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button disabled type="link" href="#" variant="filled" size="sm">
+          Link
+        </glassinewc-button>
+      </div>
+      <div class="row">
+        <glassinewc-button disabled type="checkbox" variant="filled" size="sm"
+          >Filled</glassinewc-button
+        >
+        <glassinewc-button disabled type="checkbox" variant="tonal" size="sm"
+          >Tonal</glassinewc-button
+        >
+        <glassinewc-button disabled type="checkbox" variant="danger" size="sm"
+          >Danger</glassinewc-button
+        >
+        <glassinewc-button disabled type="checkbox" variant="outlined" size="sm"
+          >Outlined</glassinewc-button
+        >
+        <glassinewc-button disabled type="checkbox" variant="elevated" size="sm"
+          >Elevated</glassinewc-button
+        >
+      </div>
+      <div class="row">
+        <glassinewc-button disabled type="checkbox" checked variant="filled" size="sm"
+          >Filled</glassinewc-button
+        >
+        <glassinewc-button disabled type="checkbox" checked variant="tonal" size="sm"
+          >Tonal</glassinewc-button
+        >
+        <glassinewc-button disabled type="checkbox" checked variant="danger" size="sm"
+          >Danger</glassinewc-button
+        >
+        <glassinewc-button disabled type="checkbox" checked variant="outlined" size="sm"
+          >Outlined</glassinewc-button
+        >
+        <glassinewc-button disabled type="checkbox" checked variant="elevated" size="sm"
+          >Elevated</glassinewc-button
+        >
+      </div>
+      <h3>size</h3>
+      <div class="row">xs, sm (default), md, lg, xl</div>
+      <h3>shape</h3>
+      <div class="row">round (default), square</div>
+      <div class="row">
+        <glassinewc-button variant="filled" size="xs">X Small</glassinewc-button>
+        <glassinewc-button variant="filled" size="sm">Small</glassinewc-button>
+        <glassinewc-button variant="filled" size="md">Medium</glassinewc-button>
+        <glassinewc-button variant="filled" size="lg">Large</glassinewc-button>
+        <glassinewc-button variant="filled" size="xl">X Large</glassinewc-button>
+      </div>
+      <div class="row">
+        <glassinewc-button variant="filled" size="xs" shape="square">X Small</glassinewc-button>
+        <glassinewc-button variant="filled" size="sm" shape="square">Small</glassinewc-button>
+        <glassinewc-button variant="filled" size="md" shape="square">Medium</glassinewc-button>
+        <glassinewc-button variant="filled" size="lg" shape="square">Large</glassinewc-button>
+        <glassinewc-button variant="filled" size="xl" shape="square">X Large</glassinewc-button>
+      </div>
+      <h3>icon-button</h3>
+      <div class="row">default, narrow, wide</div>
+      <div class="row">
+        <glassinewc-button icon-button="default" size="xs">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="default" size="sm">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="default" size="md">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="default" size="lg">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="default" size="xl">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+      </div>
+      <div class="row">
+        <glassinewc-button icon-button="default" size="xs" shape="square">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="default" size="sm" shape="square">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="default" size="md" shape="square">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="default" size="lg" shape="square">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="default" size="xl" shape="square">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+      </div>
+      <div class="row">
+        <glassinewc-button icon-button="narrow" size="xs">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="narrow" size="sm">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="narrow" size="md">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="narrow" size="lg">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="narrow" size="xl">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+      </div>
+      <div class="row">
+        <glassinewc-button icon-button="narrow" size="xs" shape="square">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="narrow" size="sm" shape="square">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="narrow" size="md" shape="square">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="narrow" size="lg" shape="square">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="narrow" size="xl" shape="square">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+      </div>
+      <div class="row">
+        <glassinewc-button icon-button="wide" size="xs">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="wide" size="sm">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="wide" size="md">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="wide" size="lg">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="wide" size="xl">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+      </div>
+      <div class="row">
+        <glassinewc-button icon-button="wide" size="xs" shape="square">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="wide" size="sm" shape="square">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="wide" size="md" shape="square">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="wide" size="lg" shape="square">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+        <glassinewc-button icon-button="wide" size="xl" shape="square">
+          <!-- Material Icons https://fonts.google.com/icons -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z" />
+          </svg>
+        </glassinewc-button>
+      </div>
+      <h3>href</h3>
+      <div class="row">for type="link"</div>
+      <h3>target</h3>
+      <div class="row">for type="link"</div>
+      <h3>mime-type</h3>
+      <div class="row">for type="link"</div>
+      <h3>name</h3>
+      <div class="row">for type="checkbox" or "radio"</div>
+      <h3>value</h3>
+      <div class="row">for type="checkbox" or "radio"</div>
+      <h3>checked</h3>
+      <div class="row">for type="checkbox" or "radio"</div>
+      <h3>onClick</h3>
+      <div class="row">for type="button", "submit", "reset" or "link"</div>
+      <h3>onChange</h3>
+      <div class="row">for type="checkbox" or "radio"</div>
+    </main>
+  </body>
+</html>
